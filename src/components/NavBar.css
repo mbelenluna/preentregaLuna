@@ -1,0 +1,26 @@
+@font-face {
+    font-family: logo;
+    src: url(/src/fonts/Barlow-Bold.ttf);
+}
+
+@font-face {
+    font-family: button;
+    src: url(/src/fonts/Barlow-Light.ttf);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    font-family: logo;
+}
+
+button {
+    font-family: button;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    cursor: pointer;
+}

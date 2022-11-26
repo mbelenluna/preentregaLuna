@@ -1,0 +1,12 @@
+.cart {
+    width: 40px;
+    height: 40px;
+}
+
+.cart-widget {
+    display: flex;
+}
+
+.number-products {
+    padding-left: 7px;
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: headline;
+    src: url(/src/fonts/Satisfy-Regular.ttf);
+}
+
+.greeting {
+    text-align: center;
+    font-family: button;
+    background-color: #860f0f;
+    color: black;
+    font-size: 20px;
+    padding: 3px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
