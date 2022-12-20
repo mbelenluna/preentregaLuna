@@ -7,16 +7,6 @@ import List from './components/List';
 import { products } from "./data.js";
 
 function App() {
-
-  const getProducts = (categoryId) => {
-    return new Promise ((resolve) => {
-        setTimeout(() => {
-            resolve(
-                categoryId ? products.filter((product) => product.category === categoryId) : products
-            );
-        })
-    })
-}
   
   return (
     <div className="App">
