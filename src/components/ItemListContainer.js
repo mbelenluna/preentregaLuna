@@ -1,7 +1,7 @@
-import ItemList from "./ItemList";
 import { products } from "../data.js";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import Item from "./Item";
 
 const ItemListContainer = () => {
 
@@ -13,9 +13,9 @@ const ItemListContainer = () => {
 
         products.then((res)=>{
             if(categoryId){
-                setProductList(res.filter((item)=> item.category === categoryId))
+                getProducts(res.filter((item)=> item.category === categoryId))
             }else{
-                setProductList(res)
+                getProducts(res)
             }
             })
             .catch((error)=> console.log(error))
@@ -31,9 +31,11 @@ const ItemListContainer = () => {
         })}
 
     return (
-    <div>
-        <ItemList />
-    </div>
+        <div className="products">
+        {   products.map(item=>(
+            <Item item={item} key={item.id}/>
+            ))}
+        </div>
     )}
 
 export default ItemListContainer;
