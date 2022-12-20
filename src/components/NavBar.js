@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import CartWidget from "./CartWidget";
-import { Link, Routes, Route, Navigate } from "react-router-dom";
+import { Link, Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import ItemListContainer from "./ItemListContainer";
 import List from "./List";
 import { products } from '../data.js';
