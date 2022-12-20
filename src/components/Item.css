@@ -1,0 +1,10 @@
+.product {
+    display: flex;
+    max-width: 335px;
+    border: black solid 0.5px;
+    padding: 5px;
+}
+
+img {
+    max-width: 70%;
+}

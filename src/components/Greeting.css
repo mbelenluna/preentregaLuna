@@ -6,9 +6,9 @@
 .greeting {
     text-align: center;
     font-family: button;
-    background-color: #860f0f;
+    background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     padding: 3px;
 }
 
