@@ -5,8 +5,6 @@ import Item from "./Item";
 
 const ItemListContainer = () => {
 
-    const getProducts = () => {
-
     let { categoryId } = useParams();
 
     useEffect(()=>{
@@ -20,7 +18,8 @@ const ItemListContainer = () => {
             })
             .catch((error)=> console.log(error))
         }, [categoryId])
-    
+
+    const getProducts = () => {
 
         return new Promise ((resolve) => {
             setTimeout(() => {
@@ -29,6 +28,8 @@ const ItemListContainer = () => {
                 );
             })
         })}
+
+
 
     return (
         <div className="products">

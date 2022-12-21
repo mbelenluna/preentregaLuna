@@ -4,7 +4,6 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import List from './components/List';
-import { products } from "./data.js";
 
 function App() {
   
