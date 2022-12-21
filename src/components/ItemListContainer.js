@@ -9,7 +9,12 @@ const ItemListContainer = () => {
 
     useEffect(()=>{
 
-        products.then((res)=>{
+        const data = new Promise(resolve => {
+            setTimeout(() => {
+                resolve(products)
+            }, 2000);
+
+        data.then((res)=>{
             if(categoryId){
                 getProducts(res.filter((item)=> item.category === categoryId))
             }else{
@@ -17,7 +22,7 @@ const ItemListContainer = () => {
             }
             })
             .catch((error)=> console.log(error))
-        }, [categoryId])
+        }, [categoryId])})
 
     const getProducts = () => {
 
