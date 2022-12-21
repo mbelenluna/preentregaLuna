@@ -29,8 +29,6 @@ const ItemListContainer = () => {
             })
         })}
 
-
-
     return (
         <div className="products">
         {   products.map(item=>(
