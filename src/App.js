@@ -12,6 +12,7 @@ function App() {
       <header className="store-header">
         <BrowserRouter>
           <NavBar />
+          <Greeting greeting={"Envío gratis en órdenes de compra mayores a $20.000"}/>
           <Routes>
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/maquillaje" element={<List list={"Maquillaje"} />} />
@@ -21,8 +22,8 @@ function App() {
             </Routes>
         </BrowserRouter>
         
-        <Greeting greeting={"Envío gratis en órdenes de compra mayores a $20.000"}/>
-        <ItemListContainer />
+        
+        
       </header>
     </div>
   );
